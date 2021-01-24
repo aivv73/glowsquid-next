@@ -111,15 +111,15 @@ export default Vue.extend({
       set (val: 0 | 1 | 2) {
         switch (val) {
         case 1:
-          this.$router.push({ path: '/' })
+          this.$router.push({ path: this.localePath('/') })
           break
         case 0:
           this.$router.push({
-            path: '/instances'
+            path: this.localePath('/instances')
           })
           break
         case 2:
-          this.$router.push({ path: '/about' })
+          this.$router.push({ path: this.localePath('/about') })
           break
         default:
           break

@@ -81,7 +81,7 @@
                   Minecraft Version: <span class="font-bold">{{ instance.dependencies.minecraft }}</span> | Fabric Version: <span class="font-bold">{{ instance.dependencies['fabric-loader'] }}</span>
                 </h4>
               </section>
-              <button class="card-action rounded-md pa-1 ml-auto" @click="$router.push({ path: `/instances/${instance ? instance.name : ''}` });">
+              <button class="card-action rounded-md pa-1 ml-auto" @click="$router.push({ path: localePath(`/instances/${instance ? instance.name : ''}`) });">
                 <v-icon>
                   mdi-information-outline
                 </v-icon>
@@ -134,7 +134,7 @@
               class="mt-4"
               color="secondary"
               block
-              @click="$router.push({ path: `/instances/${selectedInstance ? selectedInstance.name : ''}` })"
+              @click="$router.push({ path: localePath(`/instances/${selectedInstance ? selectedInstance.name : ''}`) })"
             >
               More info
             </v-btn>

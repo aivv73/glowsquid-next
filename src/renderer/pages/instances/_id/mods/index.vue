@@ -51,7 +51,7 @@
                 style="display: grid !important; "
               >
                 <v-btn block @click="$router.push({
-                  path: `/instances/${$route.params.id}/mods/${mod.mod_id.replace('local-', '')}`
+                  path: localePath(`/instances/${$route.params.id}/mods/${mod.mod_id.replace('local-', '') }`)
                 })"
                 >
                   about

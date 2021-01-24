@@ -25,7 +25,7 @@
           <v-btn
             class="mb-2"
             color="accent"
-            @click="$router.push({ path: `/instances/${$route.params.id}/mods`})"
+            @click="$router.push({ path: localePath(`/instances/${$route.params.id}/mods`) })"
           >
             Add mods
           </v-btn>
