@@ -1,4 +1,5 @@
 const plugin = require('tailwindcss/plugin')
+const i18n = require('./config/i18n')
 
 /**
  * By default, Nuxt.js is configured to cover most use cases.
@@ -29,7 +30,20 @@ module.exports = {
       ignoreNotFoundWarnings: true,
       typeCheck: false
     }],
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    [
+      'nuxt-i18n',
+      {
+        defaultLocale: 'en',
+        locales: [
+          {
+            code: 'en',
+            name: 'English'
+          }
+        ],
+        vueI18n: i18n
+      }
+    ]
   ],
   vuetify: {
     theme: {

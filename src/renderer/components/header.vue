@@ -27,14 +27,13 @@
 
       <v-spacer />
       <v-select
+        v-model="account"
         :items="accounts"
         label="Account"
         color="primary"
         class="mt-4 mr-3"
         style="max-width: 15%;"
-        :value="account"
         height="45"
-        @input="(e) => usersStore.SET_USER(usersStore.users.indexOf(e))"
       >
         <template #item="{ item }">
           <v-img
