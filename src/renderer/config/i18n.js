@@ -1,5 +1,6 @@
-import en from '../locales/en.json'
-export default {
+const en = require('../locales/en.json')
+
+module.exports = {
   locale: 'en',
   fallbackLocale: 'en',
   messages: { en }
