@@ -15,5 +15,17 @@ module.exports = {
     password: 'password',
     submit: 'submit',
     close: 'close'
+  },
+  settings: {
+    title: 'Settings',
+    sections: {
+      general: {
+        title: 'General',
+        listView: {
+          name: 'List view',
+          subtitle: 'Shows mod instances as a List instead of a Grid.'
+        }
+      }
+    }
   }
 }

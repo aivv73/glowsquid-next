@@ -8,7 +8,7 @@
       <v-toolbar
         color="secondary"
       >
-        {{ $t('authModal').title }}
+        {{ $t('authModal.title') }}
       </v-toolbar>
       <v-form v-model="valid" @submit="addUser()">
         <v-container>
@@ -19,7 +19,7 @@
                   v-model="email"
                   :rules="emailRules"
                   :color="$vuetify.theme.dark ? 'grey-lighten-4' : 'grey-darken-3'"
-                  :label="$t('authModal').email"
+                  :label="$t('authModal.email')"
                   required
                 />
               </v-col>
@@ -29,7 +29,7 @@
                   v-model="password"
                   :rules="passRules"
                   :color="$vuetify.theme.dark ? 'grey-lighten-4' : 'grey-darken-3'"
-                  :label="$t('authModal').password"
+                  :label="$t('authModal.password')"
                   type="password"
                   required
                 />
@@ -40,12 +40,12 @@
         <v-card-actions>
           <p v-if="error" class="ml-3 error--text">{{ error }}</p>
           <div class="ml-auto">
-            <v-btn type="submit" text :disabled="!valid">{{ $t('authModal').submit }}</v-btn>
+            <v-btn type="submit" text :disabled="!valid">{{ $t('authModal.submit') }}</v-btn>
             <v-btn
               text
               @click="uiStore.TOGGLE_AUTH_MODAL()"
             >
-              {{ $t('authModal').close }}
+              {{ $t('authModal.close') }}
             </v-btn>
           </div>
         </v-card-actions>
