@@ -16,6 +16,31 @@ module.exports = {
     submit: 'submit',
     close: 'close'
   },
+  addInstanceModal: {
+    instanceName: 'Instance Name',
+    selectVersion: 'Select Version',
+    selectFabricVersion: 'Select Fabric Version',
+    showUnstable: 'Show unstable versions',
+    title: 'Setup Instance | Select template | Extra Settings',
+    ramSettings: {
+      title: 'Ram settings',
+      minRam: {
+        title: 'Min ram',
+        hint: 'Minimum ram allocated to Minecraft'
+      },
+      maxRam: {
+        title: 'Max ram',
+        hint: 'Maximum ram allocated to Minecraft'
+      }
+    },
+    randomSettings: {
+      title: 'Random settings',
+      assetRoot: {
+        title: 'asset Root',
+        hint: 'Where minecraft assets are stored. You shouldn\'t need to change this. Leave blank for default'
+      }
+    }
+  },
   settings: {
     title: 'Settings',
     sections: {
