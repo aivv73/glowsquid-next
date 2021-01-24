@@ -27,5 +27,10 @@ module.exports = {
         }
       }
     }
+  },
+  pages: {
+    home: {
+      text: 'Welcome to Glowsquid, the fabric-first modrinth-powered Minecraft launcher'
+    }
   }
 }
