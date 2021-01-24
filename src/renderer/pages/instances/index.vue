@@ -28,7 +28,7 @@
       Current Status: Downloading {{ downloadState.name }} | Type: {{ downloadState.type }} | {{ Math.round(downloadState.current / downloadState.total * 100) }}% Downloaded
     </div>
     <div
-      v-if="useGrid"
+      v-if="!useList"
       class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-2 justify-center mt-4 ml-3"
       :style="`margin-right: ${selectedInstance ? '18rem' : '16px' };`"
     >
@@ -184,9 +184,8 @@ export default {
         if (val === false) this.selectedInstance = null
       }
     },
-    useGrid () {
-      console.log('Accessing property', uiStore.gridMode)
-      return uiStore.gridMode
+    useList () {
+      return uiStore.listMode
     },
     instances () {
       return this.filter

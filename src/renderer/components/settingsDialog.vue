@@ -53,10 +53,10 @@ export default Vue.extend({
     },
     useGrid: {
       get () {
-        return uiStore.gridMode
+        return uiStore.listMode
       },
       set (val) {
-        if (val !== uiStore.gridMode) uiStore.TOGGLE_GRID_MODE()
+        if (val !== uiStore.listMode) uiStore.TOGGLE_LIST_MODE()
       }
     }
   }
