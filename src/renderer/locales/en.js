@@ -31,6 +31,37 @@ module.exports = {
   pages: {
     home: {
       text: 'Welcome to Glowsquid, the fabric-first modrinth-powered Minecraft launcher'
+    },
+    about: {
+      title: 'This is mostly a test page, nothing to see here.',
+      toast: 'toast'
+    },
+    instances: {
+      search: 'Search',
+      status: 'Current Status: Downloading {download} | Type: {type} | {percent}% Downloaded',
+      launch: 'launch',
+      moreInfo: 'More info',
+      settings: 'Settings(Deletes instances rn)',
+      mcVersion: 'Minecraft version: <span class="font-bold">{version}</span>',
+      fabricVersion: 'Fabric loader version: <span class="font-bold">{version}</span>'
+    },
+    instance: {
+      status: 'Current Status: Downloading {download} | Type: {type} | {percent}% Downloaded',
+      addMods: 'Add mods',
+      settings: 'Settings',
+      tabs: {
+        description: 'Description',
+        mods: 'Mods'
+      }
+    },
+    mods: {
+      search: 'Search mods',
+      about: 'About',
+      install: 'Install',
+      hint: 'You can type the mod name, author and category here'
+    },
+    mod: {
+      install: 'Install'
     }
   }
 }
