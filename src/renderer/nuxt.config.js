@@ -1,5 +1,4 @@
 const plugin = require('tailwindcss/plugin')
-const i18n = require('./config/i18n')
 
 /**
  * By default, Nuxt.js is configured to cover most use cases.
@@ -34,14 +33,16 @@ module.exports = {
     [
       'nuxt-i18n',
       {
-        defaultLocale: 'en',
+        strategy: 'prefix',
         locales: [
           {
             code: 'en',
-            name: 'English'
+            file: 'en.js'
           }
         ],
-        vueI18n: i18n
+        lazy: true,
+        langDir: 'locales/',
+        defaultLocale: 'en'
       }
     ]
   ],

@@ -11,17 +11,17 @@
       <v-btn-toggle v-model="route" dense>
         <v-btn class="flex" color="secondary">
           <v-icon class="mr-1">mdi-package</v-icon>
-          <p class="text-center h-full mb-0">Instances</p>
+          <p class="text-center h-full mb-0">{{ $t('header').instances }}</p>
         </v-btn>
 
         <v-btn class="flex" color="secondary">
           <v-icon class="mr-1">mdi-home</v-icon>
-          <p class="text-center h-full mb-0">Home</p>
+          <p class="text-center h-full mb-0">{{ $t('header').home }}</p>
         </v-btn>
 
         <v-btn class="flex" color="secondary">
           <v-icon class="mr-1">mdi-information</v-icon>
-          <p class="text-center h-full mb-0">About</p>
+          <p class="text-center h-full mb-0">{{ $t('header').about }}</p>
         </v-btn>
       </v-btn-toggle>
 
@@ -29,7 +29,7 @@
       <v-select
         v-model="account"
         :items="accounts"
-        label="Account"
+        :label="$t('header').accounts.placeholder"
         color="primary"
         class="mt-4 mr-3"
         style="max-width: 15%;"
@@ -70,10 +70,10 @@
 
             <v-list-item-content>
               <v-list-item-title>
-                Add account
+                {{ $t('header').accounts.addAcc }}
               </v-list-item-title>
               <v-list-item-subtitle>
-                Go ahead, add another account or your first one!
+                {{ $t('header').accounts.subtitle }}
               </v-list-item-subtitle>
             </v-list-item-content>
           </v-list-item>
